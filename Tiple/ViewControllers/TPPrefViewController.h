@@ -1,5 +1,5 @@
 //
-//  TPViewController.h
+//  TPPrefViewController.h
 //  Tiple
 //
 //  Created by Ke Yang on 1/13/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TPViewController : UIViewController
+@interface TPPrefViewController : UIViewController
 
 @end

@@ -14,13 +14,18 @@
 		4A400FCA18848B93005C3303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FC918848B93005C3303 /* main.m */; };
 		4A400FCE18848B93005C3303 /* TPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FCD18848B93005C3303 /* TPAppDelegate.m */; };
 		4A400FD118848B94005C3303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A400FCF18848B94005C3303 /* Main.storyboard */; };
-		4A400FD418848B94005C3303 /* TPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FD318848B94005C3303 /* TPViewController.m */; };
 		4A400FD618848B94005C3303 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A400FD518848B94005C3303 /* Images.xcassets */; };
 		4A400FDD18848B94005C3303 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A400FDC18848B94005C3303 /* XCTest.framework */; };
 		4A400FDE18848B94005C3303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A400FBD18848B93005C3303 /* Foundation.framework */; };
 		4A400FDF18848B94005C3303 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A400FC118848B93005C3303 /* UIKit.framework */; };
 		4A400FE718848B94005C3303 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A400FE518848B94005C3303 /* InfoPlist.strings */; };
 		4A400FE918848B94005C3303 /* TipleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FE818848B94005C3303 /* TipleTests.m */; };
+		4A400FF718848CB9005C3303 /* SAMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FF418848CB9005C3303 /* SAMath.m */; };
+		4A400FF818848CB9005C3303 /* SAMultisectorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FF618848CB9005C3303 /* SAMultisectorControl.m */; };
+		4A400FFB18848CC8005C3303 /* XDKAirMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FFA18848CC8005C3303 /* XDKAirMenuController.m */; };
+		4A400FFF18848E26005C3303 /* TPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FFE18848E26005C3303 /* TPMainViewController.m */; };
+		4A40100218848E31005C3303 /* TPMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40100118848E31005C3303 /* TPMenuViewController.m */; };
+		4A40100518848E3D005C3303 /* TPPrefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40100418848E3D005C3303 /* TPPrefViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +50,24 @@
 		4A400FCC18848B93005C3303 /* TPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPAppDelegate.h; sourceTree = "<group>"; };
 		4A400FCD18848B93005C3303 /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
 		4A400FD018848B94005C3303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4A400FD218848B94005C3303 /* TPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPViewController.h; sourceTree = "<group>"; };
-		4A400FD318848B94005C3303 /* TPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPViewController.m; sourceTree = "<group>"; };
 		4A400FD518848B94005C3303 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A400FDB18848B94005C3303 /* TipleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A400FDC18848B94005C3303 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4A400FE418848B94005C3303 /* TipleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TipleTests-Info.plist"; sourceTree = "<group>"; };
 		4A400FE618848B94005C3303 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A400FE818848B94005C3303 /* TipleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipleTests.m; sourceTree = "<group>"; };
+		4A400FF318848CB9005C3303 /* SAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMath.h; sourceTree = "<group>"; };
+		4A400FF418848CB9005C3303 /* SAMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMath.m; sourceTree = "<group>"; };
+		4A400FF518848CB9005C3303 /* SAMultisectorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMultisectorControl.h; sourceTree = "<group>"; };
+		4A400FF618848CB9005C3303 /* SAMultisectorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMultisectorControl.m; sourceTree = "<group>"; };
+		4A400FF918848CC8005C3303 /* XDKAirMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDKAirMenuController.h; sourceTree = "<group>"; };
+		4A400FFA18848CC8005C3303 /* XDKAirMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDKAirMenuController.m; sourceTree = "<group>"; };
+		4A400FFD18848E26005C3303 /* TPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPMainViewController.h; sourceTree = "<group>"; };
+		4A400FFE18848E26005C3303 /* TPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPMainViewController.m; sourceTree = "<group>"; };
+		4A40100018848E31005C3303 /* TPMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPMenuViewController.h; sourceTree = "<group>"; };
+		4A40100118848E31005C3303 /* TPMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPMenuViewController.m; sourceTree = "<group>"; };
+		4A40100318848E3D005C3303 /* TPPrefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPrefViewController.h; sourceTree = "<group>"; };
+		4A40100418848E3D005C3303 /* TPPrefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPrefViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +127,11 @@
 		4A400FC318848B93005C3303 /* Tiple */ = {
 			isa = PBXGroup;
 			children = (
+				4A400FF218848C9F005C3303 /* ExLib */,
+				4A400FFC18848DFA005C3303 /* ViewControllers */,
 				4A400FCC18848B93005C3303 /* TPAppDelegate.h */,
 				4A400FCD18848B93005C3303 /* TPAppDelegate.m */,
 				4A400FCF18848B94005C3303 /* Main.storyboard */,
-				4A400FD218848B94005C3303 /* TPViewController.h */,
-				4A400FD318848B94005C3303 /* TPViewController.m */,
 				4A400FD518848B94005C3303 /* Images.xcassets */,
 				4A400FC418848B93005C3303 /* Supporting Files */,
 			);
@@ -150,6 +165,32 @@
 				4A400FE518848B94005C3303 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A400FF218848C9F005C3303 /* ExLib */ = {
+			isa = PBXGroup;
+			children = (
+				4A400FF918848CC8005C3303 /* XDKAirMenuController.h */,
+				4A400FFA18848CC8005C3303 /* XDKAirMenuController.m */,
+				4A400FF318848CB9005C3303 /* SAMath.h */,
+				4A400FF418848CB9005C3303 /* SAMath.m */,
+				4A400FF518848CB9005C3303 /* SAMultisectorControl.h */,
+				4A400FF618848CB9005C3303 /* SAMultisectorControl.m */,
+			);
+			path = ExLib;
+			sourceTree = "<group>";
+		};
+		4A400FFC18848DFA005C3303 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A400FFD18848E26005C3303 /* TPMainViewController.h */,
+				4A400FFE18848E26005C3303 /* TPMainViewController.m */,
+				4A40100018848E31005C3303 /* TPMenuViewController.h */,
+				4A40100118848E31005C3303 /* TPMenuViewController.m */,
+				4A40100318848E3D005C3303 /* TPPrefViewController.h */,
+				4A40100418848E3D005C3303 /* TPPrefViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A400FD418848B94005C3303 /* TPViewController.m in Sources */,
+				4A400FF818848CB9005C3303 /* SAMultisectorControl.m in Sources */,
+				4A40100218848E31005C3303 /* TPMenuViewController.m in Sources */,
+				4A400FFB18848CC8005C3303 /* XDKAirMenuController.m in Sources */,
+				4A40100518848E3D005C3303 /* TPPrefViewController.m in Sources */,
+				4A400FF718848CB9005C3303 /* SAMath.m in Sources */,
+				4A400FFF18848E26005C3303 /* TPMainViewController.m in Sources */,
 				4A400FCE18848B93005C3303 /* TPAppDelegate.m in Sources */,
 				4A400FCA18848B93005C3303 /* main.m in Sources */,
 			);
