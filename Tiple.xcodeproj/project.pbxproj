@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A400FBE18848B93005C3303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A400FBD18848B93005C3303 /* Foundation.framework */; };
+		4A400FC018848B93005C3303 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A400FBF18848B93005C3303 /* CoreGraphics.framework */; };
+		4A400FC218848B93005C3303 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A400FC118848B93005C3303 /* UIKit.framework */; };
+		4A400FC818848B93005C3303 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A400FC618848B93005C3303 /* InfoPlist.strings */; };
+		4A400FCA18848B93005C3303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FC918848B93005C3303 /* main.m */; };
+		4A400FCE18848B93005C3303 /* TPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FCD18848B93005C3303 /* TPAppDelegate.m */; };
+		4A400FD118848B94005C3303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A400FCF18848B94005C3303 /* Main.storyboard */; };
+		4A400FD418848B94005C3303 /* TPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FD318848B94005C3303 /* TPViewController.m */; };
+		4A400FD618848B94005C3303 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A400FD518848B94005C3303 /* Images.xcassets */; };
+		4A400FDD18848B94005C3303 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A400FDC18848B94005C3303 /* XCTest.framework */; };
+		4A400FDE18848B94005C3303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A400FBD18848B93005C3303 /* Foundation.framework */; };
+		4A400FDF18848B94005C3303 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A400FC118848B93005C3303 /* UIKit.framework */; };
+		4A400FE718848B94005C3303 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A400FE518848B94005C3303 /* InfoPlist.strings */; };
+		4A400FE918848B94005C3303 /* TipleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FE818848B94005C3303 /* TipleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A400FE018848B94005C3303 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A400FB218848B93005C3303 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A400FB918848B93005C3303;
+			remoteInfo = Tiple;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A400FBA18848B93005C3303 /* Tiple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A400FBD18848B93005C3303 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A400FBF18848B93005C3303 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4A400FC118848B93005C3303 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4A400FC518848B93005C3303 /* Tiple-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiple-Info.plist"; sourceTree = "<group>"; };
+		4A400FC718848B93005C3303 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A400FC918848B93005C3303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A400FCB18848B93005C3303 /* Tiple-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tiple-Prefix.pch"; sourceTree = "<group>"; };
+		4A400FCC18848B93005C3303 /* TPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPAppDelegate.h; sourceTree = "<group>"; };
+		4A400FCD18848B93005C3303 /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
+		4A400FD018848B94005C3303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A400FD218848B94005C3303 /* TPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPViewController.h; sourceTree = "<group>"; };
+		4A400FD318848B94005C3303 /* TPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPViewController.m; sourceTree = "<group>"; };
+		4A400FD518848B94005C3303 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A400FDB18848B94005C3303 /* TipleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A400FDC18848B94005C3303 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4A400FE418848B94005C3303 /* TipleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TipleTests-Info.plist"; sourceTree = "<group>"; };
+		4A400FE618848B94005C3303 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A400FE818848B94005C3303 /* TipleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A400FB718848B93005C3303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A400FC018848B93005C3303 /* CoreGraphics.framework in Frameworks */,
+				4A400FC218848B93005C3303 /* UIKit.framework in Frameworks */,
+				4A400FBE18848B93005C3303 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A400FD818848B94005C3303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A400FDD18848B94005C3303 /* XCTest.framework in Frameworks */,
+				4A400FDF18848B94005C3303 /* UIKit.framework in Frameworks */,
+				4A400FDE18848B94005C3303 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A400FB118848B93005C3303 = {
+			isa = PBXGroup;
+			children = (
+				4A400FC318848B93005C3303 /* Tiple */,
+				4A400FE218848B94005C3303 /* TipleTests */,
+				4A400FBC18848B93005C3303 /* Frameworks */,
+				4A400FBB18848B93005C3303 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A400FBB18848B93005C3303 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A400FBA18848B93005C3303 /* Tiple.app */,
+				4A400FDB18848B94005C3303 /* TipleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A400FBC18848B93005C3303 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A400FBD18848B93005C3303 /* Foundation.framework */,
+				4A400FBF18848B93005C3303 /* CoreGraphics.framework */,
+				4A400FC118848B93005C3303 /* UIKit.framework */,
+				4A400FDC18848B94005C3303 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A400FC318848B93005C3303 /* Tiple */ = {
+			isa = PBXGroup;
+			children = (
+				4A400FCC18848B93005C3303 /* TPAppDelegate.h */,
+				4A400FCD18848B93005C3303 /* TPAppDelegate.m */,
+				4A400FCF18848B94005C3303 /* Main.storyboard */,
+				4A400FD218848B94005C3303 /* TPViewController.h */,
+				4A400FD318848B94005C3303 /* TPViewController.m */,
+				4A400FD518848B94005C3303 /* Images.xcassets */,
+				4A400FC418848B93005C3303 /* Supporting Files */,
+			);
+			path = Tiple;
+			sourceTree = "<group>";
+		};
+		4A400FC418848B93005C3303 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A400FC518848B93005C3303 /* Tiple-Info.plist */,
+				4A400FC618848B93005C3303 /* InfoPlist.strings */,
+				4A400FC918848B93005C3303 /* main.m */,
+				4A400FCB18848B93005C3303 /* Tiple-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A400FE218848B94005C3303 /* TipleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A400FE818848B94005C3303 /* TipleTests.m */,
+				4A400FE318848B94005C3303 /* Supporting Files */,
+			);
+			path = TipleTests;
+			sourceTree = "<group>";
+		};
+		4A400FE318848B94005C3303 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A400FE418848B94005C3303 /* TipleTests-Info.plist */,
+				4A400FE518848B94005C3303 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A400FB918848B93005C3303 /* Tiple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A400FEC18848B94005C3303 /* Build configuration list for PBXNativeTarget "Tiple" */;
+			buildPhases = (
+				4A400FB618848B93005C3303 /* Sources */,
+				4A400FB718848B93005C3303 /* Frameworks */,
+				4A400FB818848B93005C3303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tiple;
+			productName = Tiple;
+			productReference = 4A400FBA18848B93005C3303 /* Tiple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A400FDA18848B94005C3303 /* TipleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A400FEF18848B94005C3303 /* Build configuration list for PBXNativeTarget "TipleTests" */;
+			buildPhases = (
+				4A400FD718848B94005C3303 /* Sources */,
+				4A400FD818848B94005C3303 /* Frameworks */,
+				4A400FD918848B94005C3303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A400FE118848B94005C3303 /* PBXTargetDependency */,
+			);
+			name = TipleTests;
+			productName = TipleTests;
+			productReference = 4A400FDB18848B94005C3303 /* TipleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A400FB218848B93005C3303 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Pyrus;
+				TargetAttributes = {
+					4A400FDA18848B94005C3303 = {
+						TestTargetID = 4A400FB918848B93005C3303;
+					};
+				};
+			};
+			buildConfigurationList = 4A400FB518848B93005C3303 /* Build configuration list for PBXProject "Tiple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A400FB118848B93005C3303;
+			productRefGroup = 4A400FBB18848B93005C3303 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A400FB918848B93005C3303 /* Tiple */,
+				4A400FDA18848B94005C3303 /* TipleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A400FB818848B93005C3303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A400FD618848B94005C3303 /* Images.xcassets in Resources */,
+				4A400FC818848B93005C3303 /* InfoPlist.strings in Resources */,
+				4A400FD118848B94005C3303 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A400FD918848B94005C3303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A400FE718848B94005C3303 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A400FB618848B93005C3303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A400FD418848B94005C3303 /* TPViewController.m in Sources */,
+				4A400FCE18848B93005C3303 /* TPAppDelegate.m in Sources */,
+				4A400FCA18848B93005C3303 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A400FD718848B94005C3303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A400FE918848B94005C3303 /* TipleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A400FE118848B94005C3303 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A400FB918848B93005C3303 /* Tiple */;
+			targetProxy = 4A400FE018848B94005C3303 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A400FC618848B93005C3303 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A400FC718848B93005C3303 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4A400FCF18848B94005C3303 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A400FD018848B94005C3303 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A400FE518848B94005C3303 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A400FE618848B94005C3303 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A400FEA18848B94005C3303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4A400FEB18848B94005C3303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A400FED18848B94005C3303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiple/Tiple-Prefix.pch";
+				INFOPLIST_FILE = "Tiple/Tiple-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4A400FEE18848B94005C3303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiple/Tiple-Prefix.pch";
+				INFOPLIST_FILE = "Tiple/Tiple-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4A400FF018848B94005C3303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tiple.app/Tiple";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiple/Tiple-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TipleTests/TipleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4A400FF118848B94005C3303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tiple.app/Tiple";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiple/Tiple-Prefix.pch";
+				INFOPLIST_FILE = "TipleTests/TipleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A400FB518848B93005C3303 /* Build configuration list for PBXProject "Tiple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A400FEA18848B94005C3303 /* Debug */,
+				4A400FEB18848B94005C3303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A400FEC18848B94005C3303 /* Build configuration list for PBXNativeTarget "Tiple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A400FED18848B94005C3303 /* Debug */,
+				4A400FEE18848B94005C3303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4A400FEF18848B94005C3303 /* Build configuration list for PBXNativeTarget "TipleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A400FF018848B94005C3303 /* Debug */,
+				4A400FF118848B94005C3303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A400FB218848B93005C3303 /* Project object */;
+}
