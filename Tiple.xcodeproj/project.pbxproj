@@ -25,6 +25,7 @@
 		4A400FFF18848E26005C3303 /* TPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FFE18848E26005C3303 /* TPMainViewController.m */; };
 		4A40100518848E3D005C3303 /* TPPrefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40100418848E3D005C3303 /* TPPrefViewController.m */; };
 		4A40100B1884C4A2005C3303 /* TPCreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40100A1884C4A2005C3303 /* TPCreditViewController.m */; };
+		4A40100E1884C5E7005C3303 /* TPRoundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40100D1884C5E7005C3303 /* TPRoundImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		4A40100418848E3D005C3303 /* TPPrefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPrefViewController.m; sourceTree = "<group>"; };
 		4A4010091884C4A2005C3303 /* TPCreditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCreditViewController.h; sourceTree = "<group>"; };
 		4A40100A1884C4A2005C3303 /* TPCreditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPCreditViewController.m; sourceTree = "<group>"; };
+		4A40100C1884C5E7005C3303 /* TPRoundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPRoundImageView.h; path = ../TPRoundImageView.h; sourceTree = "<group>"; };
+		4A40100D1884C5E7005C3303 /* TPRoundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPRoundImageView.m; path = ../TPRoundImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 		4A400FF218848C9F005C3303 /* ExLib */ = {
 			isa = PBXGroup;
 			children = (
+				4A40100C1884C5E7005C3303 /* TPRoundImageView.h */,
+				4A40100D1884C5E7005C3303 /* TPRoundImageView.m */,
 				4A400FF318848CB9005C3303 /* SAMath.h */,
 				4A400FF418848CB9005C3303 /* SAMath.m */,
 				4A400FF518848CB9005C3303 /* SAMultisectorControl.h */,
@@ -293,6 +298,7 @@
 				4A400FFF18848E26005C3303 /* TPMainViewController.m in Sources */,
 				4A400FCE18848B93005C3303 /* TPAppDelegate.m in Sources */,
 				4A400FCA18848B93005C3303 /* main.m in Sources */,
+				4A40100E1884C5E7005C3303 /* TPRoundImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

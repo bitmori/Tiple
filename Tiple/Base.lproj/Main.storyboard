@@ -284,7 +284,7 @@
             </objects>
             <point key="canvasLocation" x="1452" y="-316"/>
         </scene>
-        <!--Credit View Controller - Preference-->
+        <!--Credit View Controller - About-->
         <scene sceneID="Buv-ZS-WwJ">
             <objects>
                 <viewController id="8gr-1f-yLa" customClass="TPCreditViewController" sceneMemberID="viewController">
@@ -295,9 +295,40 @@
                     <view key="view" contentMode="scaleToFill" id="o5n-sn-Bdr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjo-S0-9my" customClass="TPRoundImageView">
+                                <rect key="frame" x="60" y="100" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created By Kirk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLK-ql-ozw">
+                                <rect key="frame" x="100" y="362" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tiple is inspired by a trip to Sakanaya" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="287" translatesAutoresizingMaskIntoConstraints="NO" id="WwE-Cv-yUb">
+                                <rect key="frame" x="17" y="404" width="287" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stay generous, stay grateful." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN2-Bs-cs1">
+                                <rect key="frame" x="20" y="447" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Preference" id="cNE-gE-yur"/>
+                    <navigationItem key="navigationItem" title="About" id="cNE-gE-yur"/>
+                    <connections>
+                        <outlet property="imageView" destination="sjo-S0-9my" id="36U-Sq-K4i"/>
+                        <outlet property="label1" destination="wLK-ql-ozw" id="adC-rs-B8i"/>
+                        <outlet property="label2" destination="WwE-Cv-yUb" id="egV-bg-Yoq"/>
+                        <outlet property="label3" destination="NN2-Bs-cs1" id="SWd-7T-Qg0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlH-g5-3na" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
