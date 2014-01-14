@@ -12,7 +12,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSMutableDictionary *attr = [NSMutableDictionary new];
+    attr[NSForegroundColorAttributeName] = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:0.6];
+
+    NSShadow* sh = [NSShadow new];
+    [sh setShadowColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8]];
+    [sh setShadowOffset:CGSizeMake(0, -1)];
+    attr[NSShadowAttributeName] = sh;
+
+    attr[NSFontAttributeName] = [UIFont systemFontOfSize:18.0];
+    [[UINavigationBar appearance] setTitleTextAttributes:attr];
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:1 green:102/255.0f blue:102/255.0f alpha:1]];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:1 green:102/255.0f blue:102/255.0f alpha:1]];
+
     return YES;
 }
 							

@@ -7,42 +7,71 @@
 //
 
 #import "TPPrefViewController.h"
-#import "XDKAirMenuController.h"
 
 @interface TPPrefViewController ()
-- (IBAction)onMenuButton:(id)sender;
+
+- (IBAction)onMSControl:(id)sender;
+- (IBAction)onResetButton:(id)sender;
+
+@property (strong, nonatomic) SAMultisectorSector* percentSector;
+@property (weak, nonatomic) IBOutlet UILabel *percentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *percentLabel2;
 
 @end
 
 @implementation TPPrefViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
+    self.view.backgroundColor = [UIColor colorWithRed:26.0/255.0 green:26.0/255.0 blue:26.0/255.0 alpha:1.0];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)onMenuButton:(id)sender {
-    XDKAirMenuController *menu = [XDKAirMenuController sharedMenu];
+    UIColor* perColor = [UIColor colorWithRed:29.0/255.0 green:207.0/255.0 blue:0.0 alpha:1.0];
+    self.percentLabel.textColor = perColor;
+    self.percentLabel2.textColor = perColor;
     
-    if (menu.isMenuOpened)
-        [menu closeMenuAnimated];
-    else
-        [menu openMenuAnimated];
+    self.percentSector = [SAMultisectorSector sectorWithColor:perColor maxValue:100.0];
+    self.percentSector.position = 2;
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"percentSet"]) {
+        self.percentSector.startValue = [[NSUserDefaults standardUserDefaults] doubleForKey:@"percentLo"];
+        self.percentSector.endValue = [[NSUserDefaults standardUserDefaults] doubleForKey:@"percentHi"];
+    } else {
+        self.percentSector.startValue = 0.0;
+        self.percentSector.endValue = 100.0;
+    }
+
+    [self.msControl addSector:self.percentSector];
+    [self updateDataView];
 }
+
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+- (IBAction)onMSControl:(id)sender
+{
+    [self updateDataView];
+}
+
+- (IBAction)onResetButton:(id)sender
+{
+    self.percentSector.startValue = 0.0;
+    self.percentSector.endValue = 100.0;
+    [self updateDataView];
+    [self.msControl setNeedsDisplay];
+}
+
+- (void)updateDataView
+{
+    [self.percentLabel setText:[NSString stringWithFormat:@"Min %.0f %%", round(self.percentSector.startValue)]];
+    [self.percentLabel2 setText:[NSString stringWithFormat:@"Max %.0f %%", round(self.percentSector.endValue)]];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"percentSet"];
+    [[NSUserDefaults standardUserDefaults] setDouble:self.percentSector.startValue forKey:@"percentLo"];
+    [[NSUserDefaults standardUserDefaults] setDouble:self.percentSector.endValue forKey:@"percentHi"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 @end

@@ -22,10 +22,9 @@
 		4A400FE918848B94005C3303 /* TipleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FE818848B94005C3303 /* TipleTests.m */; };
 		4A400FF718848CB9005C3303 /* SAMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FF418848CB9005C3303 /* SAMath.m */; };
 		4A400FF818848CB9005C3303 /* SAMultisectorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FF618848CB9005C3303 /* SAMultisectorControl.m */; };
-		4A400FFB18848CC8005C3303 /* XDKAirMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FFA18848CC8005C3303 /* XDKAirMenuController.m */; };
 		4A400FFF18848E26005C3303 /* TPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A400FFE18848E26005C3303 /* TPMainViewController.m */; };
-		4A40100218848E31005C3303 /* TPMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40100118848E31005C3303 /* TPMenuViewController.m */; };
 		4A40100518848E3D005C3303 /* TPPrefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40100418848E3D005C3303 /* TPPrefViewController.m */; };
+		4A40100B1884C4A2005C3303 /* TPCreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40100A1884C4A2005C3303 /* TPCreditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +59,12 @@
 		4A400FF418848CB9005C3303 /* SAMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMath.m; sourceTree = "<group>"; };
 		4A400FF518848CB9005C3303 /* SAMultisectorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMultisectorControl.h; sourceTree = "<group>"; };
 		4A400FF618848CB9005C3303 /* SAMultisectorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMultisectorControl.m; sourceTree = "<group>"; };
-		4A400FF918848CC8005C3303 /* XDKAirMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDKAirMenuController.h; sourceTree = "<group>"; };
-		4A400FFA18848CC8005C3303 /* XDKAirMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDKAirMenuController.m; sourceTree = "<group>"; };
 		4A400FFD18848E26005C3303 /* TPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPMainViewController.h; sourceTree = "<group>"; };
 		4A400FFE18848E26005C3303 /* TPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPMainViewController.m; sourceTree = "<group>"; };
-		4A40100018848E31005C3303 /* TPMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPMenuViewController.h; sourceTree = "<group>"; };
-		4A40100118848E31005C3303 /* TPMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPMenuViewController.m; sourceTree = "<group>"; };
 		4A40100318848E3D005C3303 /* TPPrefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPrefViewController.h; sourceTree = "<group>"; };
 		4A40100418848E3D005C3303 /* TPPrefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPrefViewController.m; sourceTree = "<group>"; };
+		4A4010091884C4A2005C3303 /* TPCreditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCreditViewController.h; sourceTree = "<group>"; };
+		4A40100A1884C4A2005C3303 /* TPCreditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPCreditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +167,6 @@
 		4A400FF218848C9F005C3303 /* ExLib */ = {
 			isa = PBXGroup;
 			children = (
-				4A400FF918848CC8005C3303 /* XDKAirMenuController.h */,
-				4A400FFA18848CC8005C3303 /* XDKAirMenuController.m */,
 				4A400FF318848CB9005C3303 /* SAMath.h */,
 				4A400FF418848CB9005C3303 /* SAMath.m */,
 				4A400FF518848CB9005C3303 /* SAMultisectorControl.h */,
@@ -185,10 +180,10 @@
 			children = (
 				4A400FFD18848E26005C3303 /* TPMainViewController.h */,
 				4A400FFE18848E26005C3303 /* TPMainViewController.m */,
-				4A40100018848E31005C3303 /* TPMenuViewController.h */,
-				4A40100118848E31005C3303 /* TPMenuViewController.m */,
 				4A40100318848E3D005C3303 /* TPPrefViewController.h */,
 				4A40100418848E3D005C3303 /* TPPrefViewController.m */,
+				4A4010091884C4A2005C3303 /* TPCreditViewController.h */,
+				4A40100A1884C4A2005C3303 /* TPCreditViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -292,9 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A400FF818848CB9005C3303 /* SAMultisectorControl.m in Sources */,
-				4A40100218848E31005C3303 /* TPMenuViewController.m in Sources */,
-				4A400FFB18848CC8005C3303 /* XDKAirMenuController.m in Sources */,
 				4A40100518848E3D005C3303 /* TPPrefViewController.m in Sources */,
+				4A40100B1884C4A2005C3303 /* TPCreditViewController.m in Sources */,
 				4A400FF718848CB9005C3303 /* SAMath.m in Sources */,
 				4A400FFF18848E26005C3303 /* TPMainViewController.m in Sources */,
 				4A400FCE18848B93005C3303 /* TPAppDelegate.m in Sources */,

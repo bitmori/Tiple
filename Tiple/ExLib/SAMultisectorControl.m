@@ -128,7 +128,7 @@ typedef struct{
             return YES;
         }
         
-        if([self touchInCircleWithPoint:touchPoint circleCenter:drawInf.startMarkerCenter]){
+        if((!sector.isSingle) && [self touchInCircleWithPoint:touchPoint circleCenter:drawInf.startMarkerCenter]){
             trackingSector = sector;
             trackingSectorDrawInf = drawInf;
             trackingSectorStartMarker = YES;
@@ -288,7 +288,12 @@ typedef struct{
     
     //text on markers
     NSString *markerStrTemplate = [@"%.0f" stringByReplacingOccurrencesOfString:@"0" withString:[NSString stringWithFormat:@"%i", self.numbersAfterPoint]];
-    NSString *startMarkerStr = [NSString stringWithFormat:markerStrTemplate, sector.startValue];
+    NSString *startMarkerStr = nil;
+    if (sector.isSingle) {
+        startMarkerStr = sector.label;
+    } else {
+        startMarkerStr = [NSString stringWithFormat:markerStrTemplate, sector.startValue];
+    }
     NSString *endMarkerStr = [NSString stringWithFormat:markerStrTemplate, sector.endValue];
     
     //drawing start marker's text
@@ -306,6 +311,9 @@ typedef struct{
 
 
 - (SASectorDrawingInformation) sectorToDrawInf:(SAMultisectorSector *)sector position:(NSInteger)position{
+    if (sector.position!=0) {
+        position = sector.position+1;
+    }
     SASectorDrawingInformation drawInf;
     
     drawInf.circleCenter = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height /2);
@@ -388,6 +396,8 @@ typedef struct{
         self.endValue = 50.0;
         self.tag = 0;
         self.color = [UIColor greenColor];
+        self.isSingle = NO;
+        self.position = 0;
     }
     return self;
 }
@@ -414,4 +424,11 @@ typedef struct{
     return sector;
 }
 
++ (instancetype) sectorWithColor:(UIColor *)color maxValue:(double)maxValue label:(NSString *)symbol
+{
+    SAMultisectorSector * sector = [self sectorWithColor:color maxValue:maxValue];
+    sector.label = symbol;
+    sector.isSingle = YES;
+    return sector;
+}
 @end

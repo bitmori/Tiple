@@ -46,6 +46,10 @@
 
 @property (nonatomic, readwrite) NSInteger tag;
 
+@property (nonatomic, strong) NSString* label;
+@property (nonatomic, assign) BOOL isSingle;
+@property (nonatomic, assign) NSUInteger position;
+
 - (instancetype) init;
 
 + (instancetype) sector;
@@ -53,4 +57,5 @@
 + (instancetype) sectorWithColor:(UIColor *)color maxValue:(double)maxValue;
 + (instancetype) sectorWithColor:(UIColor *)color minValue:(double)minValue maxValue:(double)maxValue;
 
++ (instancetype) sectorWithColor:(UIColor *)color maxValue:(double)maxValue label:(NSString*)symbol;
 @end

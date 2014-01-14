@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SAMultisectorControl.h"
 
 @interface TPMainViewController : UIViewController
+@property (weak, nonatomic) IBOutlet SAMultisectorControl *msControl;
 
 @end
